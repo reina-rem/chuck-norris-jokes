@@ -1,0 +1,46 @@
+.download-button {
+  display: inline-block;
+  justify-content: center;
+  margin: 20px;
+}
+
+.download-button__button {
+  width: 10em;
+  padding: 10px 20px;
+  border: 1px solid #dad5cb;
+  border-radius: 5px;
+
+  font-family: 'Noto Sans Regular';
+  font-size: 1rem;
+
+  background-color: #F9F6F1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-button__button:hover {
+  background-color: #eeeae4;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.download-button__button:active {
+  background-color: #dcd8ce;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.96);
+}
+
+.download-button__button:disabled {
+  border-color: #ccc7bd;
+
+  color: #a8a49a;
+
+  background-color: #f0ece6;
+  opacity: 0.8;
+  box-shadow: none;
+  
+  cursor: default;
+  transform: none;
+}

@@ -1,0 +1,1 @@
+export { SavedJokesItem } from './SavedJokesItem'

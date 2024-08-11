@@ -1,0 +1,16 @@
+.filter {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.filter:hover {
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+.filter__category-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}

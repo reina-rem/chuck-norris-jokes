@@ -1,0 +1,61 @@
+.random-joke {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.random-joke__inner-container {
+  position: relative;
+  margin: 20px auto;
+}
+
+.random-joke__background {
+  display: inline-block;
+  width: 55vw;
+  padding: 20px 25px;
+  border-radius: 8px; 
+  background-color: #F9F6F1; 
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); 
+  cursor: copy;
+  user-select: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, height 0.7s ease;
+}
+
+.random-joke__background--invisible {
+  position: absolute;
+  z-index: -1; 
+  width: 55vw;
+  padding: 20px 25px;
+  opacity: 0;
+  user-select: none; 
+}
+
+.random-joke__background:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.225);
+  transform: scale(1.05);
+}
+
+.random-joke__text {
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: 'Noto Serif Italic';
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #383838;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.random-joke__text--hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: none;
+}
+
+.random-joke__filters {
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  transform: translateY(-100%);
+}

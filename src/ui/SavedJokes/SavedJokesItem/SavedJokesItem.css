@@ -1,0 +1,107 @@
+.saved-jokes-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 50px;
+  border: 1px solid #dad5cb;
+  border-radius: 5px;
+  overflow: hidden;
+
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.2; 
+  word-wrap: break-word;
+  
+  background-color: #F9F6F1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  
+  cursor: copy;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.saved-jokes-item:last-child {
+  margin-bottom: 0;
+}
+
+.saved-jokes-item:hover {
+  background-color: #eeeae4;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.saved-jokes-item--adding {
+  animation: saved-jokes-item__adding-animation 1s ease;
+}
+
+@keyframes saved-jokes-item__adding-animation {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.saved-jokes-item--adding .saved-jokes-item__text {
+  animation: addingText 3s ease;
+}
+
+@keyframes saved-jokes-item__text__adding-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.saved-jokes-item--deleting {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 1.2s ease;
+}
+
+.saved-jokes-item--deleting .saved-jokes-item__text {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.saved-jokes-item__delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  
+  color: #ffffff;
+  
+  background-color: #d32f2f;
+  opacity: 0;
+  
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.saved-jokes-item__delete-button::before {
+  font-size: 16px;
+  line-height: 1;
+  content: '×';
+}
+
+.saved-jokes-item--deleting .saved-jokes-item__delete-button {
+  display: none;
+}
+
+.saved-jokes-item:hover .saved-jokes-item__delete-button   {
+  opacity: 1;
+}

@@ -1,0 +1,23 @@
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-85%) translateY(25%);
+}
+
+.logo__image {
+  width: 100px;
+  height: 100px;
+  padding: 4px;
+  border: 3.5px solid #333;
+  border-radius: 50%;
+  background-color: #F3EDE2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 1.3s ease, transform 0.3s ease;
+}
+
+.logo__image:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}

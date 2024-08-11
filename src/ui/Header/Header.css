@@ -1,0 +1,41 @@
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #F9F6F1;
+  background-color: #4F4140;
+}
+
+.header__title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Z003 Medium Italic';
+  font-size: 3rem;
+  background-color: #4F4140;
+}
+
+.header__title--shadow, .header--shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header__subtitle {
+  margin-top: 50px;
+  font-family: 'Noto Sans Regular';
+  color: #F9F6F1;
+  animation: header__subtitle__animation 1s ease-in-out;
+}
+
+@keyframes header__subtitle__animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
