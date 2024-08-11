@@ -5,6 +5,12 @@
   transform: translateX(-85%) translateY(25%);
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    transform: translateX(-50%) translateY(40%) scale(0.5);
+  }
+}
+
 .logo__image {
   width: 100px;
   height: 100px;
