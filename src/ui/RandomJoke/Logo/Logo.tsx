@@ -6,7 +6,7 @@ export const Logo = () => (
     className="logo" 
     
   >
-    <a href="https://api.chucknorris.io/#!" target="_blank">
+    <a href="https://github.com/reina-rem/chuck-norris-jokes" target="_blank">
       <img 
         onClick={event => {
           event.stopPropagation() 
